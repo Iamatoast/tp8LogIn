@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 import Form from './components/Form.js'
 
 export default function App() {
   return (
     <SafeAreaView style={styles.view}>
       <View style={styles.header}>
-	<Text>Login App</Text>
+	<Text style={styles.headerText}>Login App</Text>
       </View>
       <View style={styles.container}>
 	<Image source={require('./assets/ultrakill-v1.gif')} />
@@ -29,6 +29,12 @@ const styles = StyleSheet.create({
   },
   header: {
     flex: 1,
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#612FFC'
   },
+  headerText: {
+    color: 'white',
+    fontSize: 20
+  }
 });
