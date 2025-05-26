@@ -1,20 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeViewArea style={styles.view}>
+      <View style={styles.header}>
+	<Text>Login App</Text>
+      </View>
+      <View style={styles.container}>
+	<Image source={require('./assets/ultrakill-v1.gif')} />
+	<Form />
+      </View>
       <StatusBar style="auto" />
-    </View>
+    </SafeViewArea>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  view:{
     flex: 1,
+  },
+  container: {
+    flex: 9,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  header: {
+    flex: 1,
+    alignItems: 'center'
   },
 });
