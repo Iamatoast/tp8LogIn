@@ -4,7 +4,7 @@ import Form from './components/Form.js'
 
 export default function App() {
   return (
-    <SafeViewArea style={styles.view}>
+    <SafeAreaView style={styles.view}>
       <View style={styles.header}>
 	<Text>Login App</Text>
       </View>
@@ -13,7 +13,7 @@ export default function App() {
 	<Form />
       </View>
       <StatusBar style="auto" />
-    </SafeViewArea>
+    </SafeAreaView>
   );
 }
 
