@@ -9,7 +9,7 @@ export default function App() {
 	<Text style={styles.headerText}>Login App</Text>
       </View>
       <View style={styles.container}>
-	<Image source={require('./assets/ultrakill-v1.gif')} />
+	<Image source={require('./assets/doom.jpg')} style={{height: 300, width: 350}} />
 	<Form />
       </View>
       <StatusBar style="auto" />
