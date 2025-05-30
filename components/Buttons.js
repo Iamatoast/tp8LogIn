@@ -12,17 +12,18 @@ export default function Buttons() {
 }
 const styles = StyleSheet.create({
 	viewButtons:{
-		marginTop: 25
+		marginTop: 18
 	},
 	buttons:{
 		alignItems: 'center',
 		justifyContent: 'center',
 		width: 300,
-		height: 30
+		marginTop: 7
 	},
 	ingresar:{
 		backgroundColor: '#8E5DFB',
-		borderRadius: 4
+		borderRadius: 4,
+		padding: 10
 	},
 	text:{
 		color: 'white'

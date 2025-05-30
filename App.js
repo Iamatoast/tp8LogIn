@@ -6,13 +6,13 @@ export default function App() {
   return (
     <SafeAreaView style={styles.view}>
       <View style={styles.header}>
-	<Text style={styles.headerText}>Login App</Text>
+	      <Text style={styles.headerText}>Login App</Text>
       </View>
       <View style={styles.container}>
-	<Image source={require('./assets/doom.jpg')} style={{height: 300, width: 350}} />
-	<Form />
+	      <Image source={require('./assets/doom.jpg')} style={{height: 300, width: 350, marginBottom: 20}} />
+	      <Form />
       </View>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </SafeAreaView>
   );
 }
@@ -30,8 +30,9 @@ const styles = StyleSheet.create({
   header: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#612FFC'
+    backgroundColor: '#612FFC',
+    justifyContent: 'flex-end',
+    padding: 15
   },
   headerText: {
     color: 'white',
