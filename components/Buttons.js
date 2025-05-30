@@ -3,14 +3,17 @@ import React from 'react'
 
 export default function Buttons() {
     return (
-        <View>
-            <TouchableOpacity style={[styles.ingresar, styles.buttons]}><Text>INGRESAR</Text></TouchableOpacity>
+        <View style={styles.viewButtons}>
+            <TouchableOpacity style={[styles.ingresar, styles.buttons]}><Text style={styles.text}>INGRESAR</Text></TouchableOpacity>
             <TouchableOpacity style={styles.buttons}><Text>¿Olvidaste tu contraseña?</Text></TouchableOpacity>
             <TouchableOpacity style={styles.buttons}><Text>Crear cuenta</Text></TouchableOpacity>
         </View>
     )
 }
 const styles = StyleSheet.create({
+	viewButtons:{
+		marginTop: 25
+	},
 	buttons:{
 		alignItems: 'center',
 		justifyContent: 'center',
@@ -19,5 +22,9 @@ const styles = StyleSheet.create({
 	},
 	ingresar:{
 		backgroundColor: '#8E5DFB',
+		borderRadius: 4
 	},
+	text:{
+		color: 'white'
+	}
 });
